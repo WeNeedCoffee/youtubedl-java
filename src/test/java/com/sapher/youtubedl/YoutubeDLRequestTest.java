@@ -5,31 +5,31 @@ import org.junit.Test;
 
 public class YoutubeDLRequestTest {
 
-    @Test
-    public void testBuildOptionStandalone() {
+	@Test
+	public void testBuildChainOptionWithValue() {
 
-        YoutubeDLRequest request = new YoutubeDLRequest();
-        request.setOption("help");
+		YoutubeDLRequest request = new YoutubeDLRequest();
+		request.setOption("password", "1234");
+		request.setOption("username", "1234");
 
-        Assert.assertEquals("--help", request.buildOptions());
-    }
+		Assert.assertEquals("--password 1234 --username 1234", request.buildOptions());
+	}
 
-    @Test
-    public void testBuildOptionWithValue() {
+	@Test
+	public void testBuildOptionStandalone() {
 
-        YoutubeDLRequest request = new YoutubeDLRequest();
-        request.setOption("password", "1234");
+		YoutubeDLRequest request = new YoutubeDLRequest();
+		request.setOption("help");
 
-        Assert.assertEquals("--password 1234", request.buildOptions());
-    }
+		Assert.assertEquals("--help", request.buildOptions());
+	}
 
-    @Test
-    public void testBuildChainOptionWithValue() {
+	@Test
+	public void testBuildOptionWithValue() {
 
-        YoutubeDLRequest request = new YoutubeDLRequest();
-        request.setOption("password", "1234");
-        request.setOption("username", "1234");
+		YoutubeDLRequest request = new YoutubeDLRequest();
+		request.setOption("password", "1234");
 
-        Assert.assertEquals("--password 1234 --username 1234", request.buildOptions());
-    }
+		Assert.assertEquals("--password 1234", request.buildOptions());
+	}
 }

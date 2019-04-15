@@ -5,8 +5,8 @@ import org.junit.Test;
 
 public class YoutubeDLResponseTest {
 
-    @Test
-    public void testTest() {
-        Assert.assertEquals(true, true);
-    }
+	@Test
+	public void testTest() {
+		Assert.assertEquals(true, true);
+	}
 }

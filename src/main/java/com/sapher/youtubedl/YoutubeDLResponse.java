@@ -7,49 +7,49 @@ import java.util.Map;
  */
 public class YoutubeDLResponse {
 
-    private Map<String, String> options;
-    private String command;
-    private int exitCode;
-    private String out;
-    private String err;
-    private String directory;
-    private int elapsedTime;
+	private Map<String, String> options;
+	private String command;
+	private int exitCode;
+	private String out;
+	private String err;
+	private String directory;
+	private int elapsedTime;
 
-    public YoutubeDLResponse(String command, Map<String, String> options, String directory, int exitCode, int elapsedTime, String out, String err) {
-        this.command = command;
-        this.options = options;
-        this.directory = directory;
-        this.elapsedTime = elapsedTime;
-        this.exitCode = exitCode;
-        this.out = out;
-        this.err = err;
-    }
+	public YoutubeDLResponse(String command, Map<String, String> options, String directory, int exitCode, int elapsedTime, String out, String err) {
+		this.command = command;
+		this.options = options;
+		this.directory = directory;
+		this.elapsedTime = elapsedTime;
+		this.exitCode = exitCode;
+		this.out = out;
+		this.err = err;
+	}
 
-    public String getCommand() {
-        return command;
-    }
+	public String getCommand() {
+		return command;
+	}
 
-    public int getExitCode() {
-        return exitCode;
-    }
+	public String getDirectory() {
+		return directory;
+	}
 
-    public String getOut() {
-        return out;
-    }
+	public int getElapsedTime() {
+		return elapsedTime;
+	}
 
-    public String getErr() {
-        return err;
-    }
+	public String getErr() {
+		return err;
+	}
 
-    public Map<String, String> getOptions() {
-        return options;
-    }
+	public int getExitCode() {
+		return exitCode;
+	}
 
-    public String getDirectory() {
-        return directory;
-    }
+	public Map<String, String> getOptions() {
+		return options;
+	}
 
-    public int getElapsedTime() {
-        return elapsedTime;
-    }
+	public String getOut() {
+		return out;
+	}
 }
