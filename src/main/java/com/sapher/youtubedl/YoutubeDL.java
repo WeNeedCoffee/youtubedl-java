@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 import java.util.Map;
-
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sapher.youtubedl.mapper.VideoFormat;
 import com.sapher.youtubedl.mapper.VideoInfo;
@@ -17,7 +16,6 @@ import com.sapher.youtubedl.utils.StreamProcessExtractor;
  * <p>
  * Provide an interface for youtube-dl executable
  * </p>
- *
  * <p>
  * For more information on youtube-dl, please see
  * <a href="https://github.com/rg3/youtube-dl/blob/master/README.md">YoutubeDL
@@ -33,7 +31,7 @@ public class YoutubeDL {
 
 	/**
 	 * Append executable name to command
-	 * 
+	 *
 	 * @param command Command string
 	 * @return Command string
 	 */
@@ -43,7 +41,7 @@ public class YoutubeDL {
 
 	/**
 	 * Execute youtube-dl request
-	 * 
+	 *
 	 * @param request request object
 	 * @return response object
 	 * @throws YoutubeDLException
@@ -54,7 +52,7 @@ public class YoutubeDL {
 
 	/**
 	 * Execute youtube-dl request
-	 * 
+	 *
 	 * @param request  request object
 	 * @param callback callback
 	 * @return response object
@@ -120,7 +118,7 @@ public class YoutubeDL {
 
 	/**
 	 * List categories
-	 * 
+	 *
 	 * @param url Video url
 	 * @return list of category
 	 * @throws YoutubeDLException
@@ -132,7 +130,7 @@ public class YoutubeDL {
 
 	/**
 	 * Get command executable or path to the executable
-	 * 
+	 *
 	 * @return path string
 	 */
 	public static String getExecutablePath() {
@@ -141,7 +139,7 @@ public class YoutubeDL {
 
 	/**
 	 * List formats
-	 * 
+	 *
 	 * @param url Video url
 	 * @return list of formats
 	 * @throws YoutubeDLException
@@ -153,7 +151,7 @@ public class YoutubeDL {
 
 	/**
 	 * List tags
-	 * 
+	 *
 	 * @param url Video url
 	 * @return list of tag
 	 * @throws YoutubeDLException
@@ -165,7 +163,7 @@ public class YoutubeDL {
 
 	/**
 	 * List thumbnails
-	 * 
+	 *
 	 * @param url Video url
 	 * @return list of thumbnail
 	 * @throws YoutubeDLException
@@ -177,7 +175,7 @@ public class YoutubeDL {
 
 	/**
 	 * Get youtube-dl executable version
-	 * 
+	 *
 	 * @return version string
 	 * @throws YoutubeDLException
 	 */
@@ -189,7 +187,7 @@ public class YoutubeDL {
 
 	/**
 	 * Retrieve all information available on a video
-	 * 
+	 *
 	 * @param url Video url
 	 * @return Video info
 	 * @throws YoutubeDLException
@@ -217,7 +215,7 @@ public class YoutubeDL {
 
 	/**
 	 * Set path to use for the command
-	 * 
+	 *
 	 * @param path String path to the executable
 	 */
 	public static void setExecutablePath(String path) {

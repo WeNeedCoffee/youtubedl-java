@@ -16,7 +16,7 @@ public class YoutubeDLException extends Exception {
 
 	/**
 	 * Construct YoutubeDLException from another exception
-	 * 
+	 *
 	 * @param e Any exception
 	 */
 	public YoutubeDLException(Exception e) {
@@ -25,7 +25,7 @@ public class YoutubeDLException extends Exception {
 
 	/**
 	 * Construct YoutubeDLException with a message
-	 * 
+	 *
 	 * @param message
 	 */
 	public YoutubeDLException(String message) {
@@ -34,7 +34,7 @@ public class YoutubeDLException extends Exception {
 
 	/**
 	 * Get exception message
-	 * 
+	 *
 	 * @return exception message
 	 */
 	@Override

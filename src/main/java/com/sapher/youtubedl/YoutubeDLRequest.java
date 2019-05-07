@@ -33,7 +33,7 @@ public class YoutubeDLRequest {
 
 	/**
 	 * Construct a request with a videoUrl
-	 * 
+	 *
 	 * @param url
 	 */
 	public YoutubeDLRequest(String url) {
@@ -42,7 +42,7 @@ public class YoutubeDLRequest {
 
 	/**
 	 * Construct a request with a videoUrl and working directory
-	 * 
+	 *
 	 * @param url
 	 * @param directory
 	 */
@@ -53,7 +53,7 @@ public class YoutubeDLRequest {
 
 	/**
 	 * Transform options to a string that the executable will execute
-	 * 
+	 *
 	 * @return Command string
 	 */
 	protected String buildOptions() {

@@ -1,10 +1,8 @@
 package com.sapher.youtubedl;
 
 import java.util.List;
-
 import org.junit.Assert;
 import org.junit.Test;
-
 import com.sapher.youtubedl.mapper.VideoFormat;
 import com.sapher.youtubedl.mapper.VideoInfo;
 import com.sapher.youtubedl.mapper.VideoThumbnail;
@@ -74,8 +72,8 @@ public class YoutubeDLTest {
 	}
 
 	/**
-	 * @Test public void testUsingOwnExecutablePath() throws YoutubeDLException {
-	 *       YoutubeDL.setExecutablePath("/usr/bin/youtube-dl");
+	 * @Test public void testUsingOwnExecutablePath() throws YoutubeDLException
+	 *       { YoutubeDL.setExecutablePath("/usr/bin/youtube-dl");
 	 *       Assert.assertNotNull(YoutubeDL.getVersion()); }
 	 **/
 
