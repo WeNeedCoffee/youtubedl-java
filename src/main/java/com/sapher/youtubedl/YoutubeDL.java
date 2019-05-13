@@ -105,9 +105,8 @@ public class YoutubeDL {
 		String out = outBuffer.toString();
 		String err = errBuffer.toString();
 
-		if (exitCode > 0) {
+		if (exitCode > 0)
 			throw new YoutubeDLException(err);
-		}
 
 		int elapsedTime = (int) ((System.nanoTime() - startTime) / 1000000);
 
